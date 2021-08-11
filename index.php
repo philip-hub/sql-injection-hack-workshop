@@ -37,6 +37,7 @@ if ($result->num_rows > 0) {
 <!DOCTYPE html>
 <html>
 <head>
+<link href="style.css" rel="stylesheet" type="text/css" />
     <title>
     *Your* Secure Info
     </title>

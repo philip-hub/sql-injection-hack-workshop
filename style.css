@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
 body{
-    background-color: #0f0f0f;
+    width: 100%;
+    height: -webkit-fill-available;
+    min-height: 100%;
+    background-image: url("https://i.giphy.com/media/9SJ0zZnGVQSajeSMZ2/giphy.webp");
+    background-size: cover;
+    background-position-x: center;
     color: #f0f0f0;
+    font-family: 'Fira Sans', sans-serif;
+    box-shadow: 0 8000px rgba(15, 15, 15, .96)  inset;
 }
 
 form{
@@ -9,4 +18,24 @@ form{
     margin-right: 20%;
     margin-left: 20%;
     border-radius: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
 }
+
+h1{
+ 
+    text-align: center;
+}
+
+input{
+    
+    background-color: #868686;
+    font-size: 1em;
+    border-radius: .25em;
+}
+  
+
+p{
+    text-align: center;
+}
+
