@@ -17,7 +17,7 @@ $password = "root"; //with default mamp settings
 $dbname = "mhc_bank";
 ?>
 ```
-Try signing in to one user's account then refernce the article below and the source code and try some SQL injection commands.
-W3 Schools has a great article about SQL injection [here](https://www.w3schools.com/sql/sql_injection.asp)
+<p>Try signing in to one user's account then refernce the article below and the source code and try some SQL injection commands.
+W3 Schools has a great article about SQL injection [here](https://www.w3schools.com/sql/sql_injection.asp)</p>
 ---
 
