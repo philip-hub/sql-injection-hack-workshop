@@ -17,12 +17,12 @@ $result = mysqli_query($conn, $sql);
 if ($result->num_rows > 0) {
     // output data of each row
     $bank_info ="";
-    $row_check ="";
+    $row_check =array();
     while($row = $result->fetch_assoc()) {
         
-        if ($row["username"]!= $row_check){
-        $bank_info = "<div id='bankinfo'><p>Username: ". $row["username"]. " <br> Password: ". $row["password"]. "  <br> Balance: $" . $row["amount"] . "</p><br></div><br>".$bank_info;
-        $row_check = $row["username"];
+        if (!in_array($row["username"], $row_check)){
+        $bank_info = "<div id='bankinfo'><br><p>Username: ". $row["username"]. " <br><br> Password: ". $row["password"]. "  <br><br> Balance: $" . $row["amount"] . "</p><br></div><br>".$bank_info;
+        array_push($row_check, $row["username"]);
         }
         else{
             echo "<br>";
