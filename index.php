@@ -16,6 +16,8 @@ $result = mysqli_query($conn, $sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+    echo "<br><h1>Here is your personal info we do not share it with anyone</h1><br>
+    <center><a href ='index.html'>Return to Sign In</a></center><br>";
     $bank_info ="";
     $row_check =array();
     while($row = $result->fetch_assoc()) {
@@ -29,7 +31,20 @@ if ($result->num_rows > 0) {
         }
     }
 } else {
-    $bank_info = "<p>Sorry This Account does not exsist<br><a href ='index.html'>Return to Sign In</a></p>";
+    $bank_info = "    <style>
+    body{
+width: 100%;
+height: -webkit-fill-available;
+min-height: 100%;
+background-image: url('https://i.giphy.com/media/9SJ0zZnGVQSajeSMZ2/giphy.webp');
+background-size: cover;
+background-position-x: center;
+color: #f0f0f0;
+font-family: 'Fira Sans', sans-serif;
+box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
+
+}
+    </style><br><p>Sorry This Account does not exsist<br><a href ='index.html'>Return to Sign In</a></p>";
 }
 
 
@@ -44,8 +59,7 @@ if ($result->num_rows > 0) {
     </title>
 </head>
 <body>
-<h1>Here is your personal info we do not share it with anyone</h1><br>
-<center><a href ='index.html'>Return to Sign In</a></center><br>
+
 <?php
 
 
