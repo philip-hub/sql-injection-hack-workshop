@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
         }
     }
 } else {
-    $bank_info = "<p>Sorry This Account does not exsist</p>";
+    $bank_info = "<p>Sorry This Account does not exsist<br><a href ='index.html'>Return to Sign In</a></p>";
 }
 
 
