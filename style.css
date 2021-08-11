@@ -1,0 +1,12 @@
+body{
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+}
+
+form{
+    background-color:#2E2E2E;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 1em;
+}
