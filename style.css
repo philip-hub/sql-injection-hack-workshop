@@ -12,7 +12,7 @@ body{
     box-shadow: 0 8000px rgba(15, 15, 15, .96)  inset;
 }
 
-form{
+form, #bankinfo{
     background-color:#2E2E2E;
     text-align: center;
     margin-right: 20%;
