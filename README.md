@@ -1,4 +1,4 @@
-# memphishack.com the landing page for Memphis Hackclub(Deprecated Go to [New Version](https://github.com/Memphis-Hackclub/the-new-website))
+# SQL injection hack workshop
 
 Build In | Contributors | Live version
 --- | --- | ---
