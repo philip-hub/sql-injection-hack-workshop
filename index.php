@@ -10,17 +10,17 @@ if ($conn->connect_error) {
 // Make a SQL query
 $username=$_POST["username"];
 $password = $_POST["password"];
-$sql = "SELECT * FROM userinfo WHERE username ='".$username."' AND password ='".$password."';";
-echo $sql;
+$sql = 'SELECT * FROM userinfo WHERE username ="'.$username.'" AND password ="'.$password.'";';
+// echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    $row_check ="";
+    $bank_info ="";
     while($row = $result->fetch_assoc()) {
         
         
-            $bank_info = "<br> <p>Your username in case you forgot ". $row["username"]. " - Your password : ". $row["password"]. "  Your hard earned money" . $row["amount"] . "</p><br>";
+        $bank_info = "<br> <p>Your username in case you forgot ". $row["username"]. " - Your password : ". $row["password"]. "  Your hard earned money is $" . $row["amount"] . "</p><br>".$bank_info;
            
         
     }
@@ -41,11 +41,9 @@ if ($result->num_rows > 0) {
 <h1>Here is your personal info we do not share it with anyone</h1><br>
 <?php
 
-$html_contents = <<<HTML
-          <p>$result</p>
-          HTML;
 
-echo $html_contents;
+
+echo $bank_info;
 
 ?>
 </form>
