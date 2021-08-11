@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         
         if (!in_array($row["username"], $row_check)){
-        $bank_info = "<div id='bankinfo'><br><p>Username: ". $row["username"]. " <br><br> Password: ". $row["password"]. "  </p><br><br><p id='money'> Balance: $" . $row["amount"] . "</p><br></div><br>".$bank_info;
+        $bank_info = "<div id='bankinfo'><br><p id='name'>Username: ". $row["username"]. " </p><br><p id='password'> Password: ". $row["password"]. "  </p><br><p id='money'> Balance: $" . $row["amount"] . "</p><br></div><br>".$bank_info;
         array_push($row_check, $row["username"]);
         }
         else{
