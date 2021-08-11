@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
 </head>
 <body>
 <h1>Here is your personal info we do not share it with anyone</h1><br>
-><a href ='index.html'>Return to Sign In</a><br>
+<center><a href ='index.html'>Return to Sign In</a></center><br>
 <?php
 
 
