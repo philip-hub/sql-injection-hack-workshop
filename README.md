@@ -20,5 +20,6 @@ $dbname = "mhc_bank";
 ```
 <p>Try signing in to one user's account then refernce the article below and the source code and try some SQL injection commands.
 W3 Schools has a great article about SQL injection <a href="https://www.w3schools.com/sql/sql_injection.asp">here</a></p>
+
 ---
 
