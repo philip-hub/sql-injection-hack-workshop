@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 // Make a SQL query
 $username=$_POST["username"];
 $password = $_POST["password"];
-$sql = 'SELECT * FROM userinfo WHERE username ="'.$username.'" AND password ="'.$password.'";';
+$sql = 'SELECT * FROM mhc_bank WHERE username ="'.$username.'" AND password ="'.$password.'";';
 // echo $sql;
 $result = mysqli_query($conn, $sql);
 
@@ -33,18 +33,15 @@ if ($result->num_rows > 0) {
 } else {
     $bank_info = "    <style>
     body{
-width: 100%;
-height: -webkit-fill-available;
-min-height: 100%;
-background-image: url('https://i.giphy.com/media/9SJ0zZnGVQSajeSMZ2/giphy.webp');
-background-size: cover;
-background-position-x: center;
+width: auto;
+height: auto;
+background: rgb(65,64,64);
 color: #f0f0f0;
-font-family: 'Fira Sans', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
 
 }
-    </style><br><p>Sorry This Account does not exsist<br><a href ='index.html'>Return to Sign In</a></p>";
+    </style><br><p>Sorry This Account does not exsist<br><br><a href ='index.html'>Return to Sign In</a></p>";
 }
 
 
@@ -53,7 +50,6 @@ box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
 <html>
 <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
     *Your* Secure Info
     </title>
@@ -61,22 +57,12 @@ box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
 <body>
 
 <?php
-
-
-
 echo $bank_info;
-
 ?>
+
 <br>
 <br>
 <br>
-<center>
-<a href="https://www.instagram.com/memphishackclub/" target="_blank" class="fa fa-instagram"></a>
-<a href="https://twitter.com/MHackclub" target="_blank" class="fa fa-twitter"></a>
-<a href="https://www.facebook.com/groups/656997425191729" target="_blank" class="fa fa-facebook"></a>
- <a href="https://www.linkedin.com/company/memphis-hack-club/?viewAsMember=true" class="fa fa-linkedin" target="_blank"></a>
- <a href="https://www.youtube.com/channel/UCQEw733Z4ID3AVLtFpQ5hyw" class="fa fa-youtube" target="_blank"></a>
- <br>
- </center>
+
 </body>
 </html>
