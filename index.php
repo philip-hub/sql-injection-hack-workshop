@@ -31,19 +31,19 @@ if ($result->num_rows > 0) {
         }
     }
 } else {
-    $bank_info = "    <style>
-    body{
-width: auto;
-height: auto;
-background: rgb(65,64,64);
-color: #f0f0f0;
-font-family: Arial, Helvetica, sans-serif;
-box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
-
+    $bank_info = "
+    <style>
+        body {
+            width: auto;
+            height: auto;
+            background: rgb(65,64,64);
+            color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 20000px rgba(15, 15, 15, .96)  inset;
+        }
+    </style>
+    <br><p>Sorry This Account does not exsist<br><br><a href ='index.html'>Return to Sign In</a></p>";
 }
-    </style><br><p>Sorry This Account does not exsist<br><br><a href ='index.html'>Return to Sign In</a></p>";
-}
-
 
 ?>
 <!DOCTYPE html>
