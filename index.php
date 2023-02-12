@@ -10,6 +10,11 @@ if ($conn->connect_error) {
 // Make a SQL query
 $username=$_POST["username"];
 $password = $_POST["password"];
+
+// Sanitize input
+// $username=filter_var($username, FILTER_SANITIZE_STRING);
+// $password=filter_var($password, FILTER_SANITIZE_STRING);
+
 $sql = 'SELECT * FROM mhc_bank WHERE username ="'.$username.'" AND password ="'.$password.'";';
 // echo $sql;
 $result = mysqli_query($conn, $sql);
